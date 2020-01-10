@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  max-width: 125px;
+  margin: 10px;
+  float: left;
+}
+
+.select {
+  max-width: 115px;
+}
+
+.card-container {
+  max-width: 1000px;
+}
+
+.misc-container {
+  width: 100%;
+}

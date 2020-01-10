@@ -1,0 +1,43 @@
+<div class="child-container">
+    <h1>Child component</h1>
+    <input type="text" [(ngModel)]="roll1">
+    <input type="text" [(ngModel)]="roll2">
+    <button class="btn" (click)="generateNumber()">Fire event!</button>
+</div>
+
+
+
+
+
+<mat-card class="card">
+    <mat-card-header>
+    <mat-card-title>Frame: </mat-card-title>
+    </mat-card-header>
+    <div class="container">
+        <mat-form-field class="select">
+            <mat-label>First Roll</mat-label>
+            <mat-select [(ngModel)]="selectedOption1">
+                <mat-option *ngFor="let o of options" [value]="o.value">
+                    {{ o.viewValue }}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+        <mat-form-field class="select">
+            <mat-label>Second Roll</mat-label>
+            <mat-select [(ngModel)]="selectedOption2">
+                <mat-option *ngFor="let o of options" [value]="o.value">
+                    {{ o.viewValue }}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+    </div>
+</mat-card>
+<p>
+    <input type="text" [(ngModel)]="name">
+    <br>
+    <strong>You said: </strong> {{ name }}
+</p>
+<button (click)="print()">Click me</button>
+<p>Selected option1: {{ selectedOption1 }}</p>
+<p>Selected option2: {{ selectedOption2 }}</p>
+<p>Button output: {{ printedOption1 }}</p>
