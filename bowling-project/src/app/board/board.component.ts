@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Option } from '../option.model';
 import { ScoringService } from '../scoring.service';
 
@@ -55,7 +55,7 @@ export class BoardComponent {
       this.f1o1, this.f1o2, this.f2o1, this.f2o2, this.f3o1, this.f3o2, this.f4o1, this.f4o2, this.f5o1, this.f5o2, this.f6o1, this.f6o2,
       this.f7o1, this.f7o2, this.f8o1, this.f8o2, this.f9o1, this.f9o2, this.f10o1, this.f10o2, this.f10o3
     ];
-    rollArray = rollArray.filter(function (el) {return el != null;});
+    rollArray = rollArray.filter(function (slot) {return slot != null;});
     this.sum = this.scoringService.getScore(rollArray);
   }
 
@@ -71,6 +71,13 @@ export class BoardComponent {
       return false;
     }
     return true;
+  }
+
+  validationCheck10(rollOne: number, rollTwo: number) {
+    if ((rollOne + rollTwo) > 9) {
+      return true;
+    }
+    return false;
   }
 
   isNaN(evaluatedNumber: number) {

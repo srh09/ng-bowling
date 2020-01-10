@@ -254,14 +254,16 @@
                     </mat-option>
                 </mat-select>
             </mat-form-field>
-            <mat-form-field class="select">
-                <mat-label>Third Roll</mat-label>
-                <mat-select [(ngModel)]="f10o3">
-                    <mat-option *ngFor="let o of options" [value]="o.value">
-                        {{ o.viewValue }}
-                    </mat-option>
-                </mat-select>
-            </mat-form-field>
+            <div *ngIf="validationCheck10(f10o1, f10o2)">
+                <mat-form-field class="select">
+                    <mat-label>Third Roll</mat-label>
+                    <mat-select [(ngModel)]="f10o3">
+                        <mat-option *ngFor="let o of options" [value]="o.value">
+                            {{ o.viewValue }}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
         </div>
     </mat-card>
     <div class="misc-container">

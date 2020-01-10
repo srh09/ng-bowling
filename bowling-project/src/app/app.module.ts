@@ -12,7 +12,9 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatCardModule } from '@angular/material/card';
 
 import { FrameComponent } from './frame/frame.component';
-import { BoardComponent } from './board/board.component'
+import { BoardComponent } from './board/board.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment'
 
 @NgModule({
   declarations: [
@@ -28,7 +30,8 @@ import { BoardComponent } from './board/board.component'
     MatFormFieldModule,
     MatSelectModule,
     MatCardModule,
-    FormsModule
+    FormsModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],
   bootstrap: [AppComponent]
