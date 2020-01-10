@@ -12,14 +12,16 @@
                     </mat-option>
                 </mat-select>
             </mat-form-field>
-            <mat-form-field class="select">
-                <mat-label>Second Roll</mat-label>
-                <mat-select [(ngModel)]="f1o2">
-                    <mat-option *ngFor="let o of options" [value]="o.value">
-                        {{ o.viewValue }}
-                    </mat-option>
-                </mat-select>
-            </mat-form-field>
+            <div *ngIf="validationCheck(f1o1)">
+                <mat-form-field class="select">
+                    <mat-label>Second Roll</mat-label>
+                    <mat-select [(ngModel)]="f1o2">
+                        <mat-option *ngFor="let o of options" [value]="o.value">
+                            {{ o.viewValue }}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
         </div>
     </mat-card>
     
@@ -36,14 +38,16 @@
                     </mat-option>
                 </mat-select>
             </mat-form-field>
-            <mat-form-field class="select">
-                <mat-label>Second Roll</mat-label>
-                <mat-select [(ngModel)]="f2o2">
-                    <mat-option *ngFor="let o of options" [value]="o.value">
-                        {{ o.viewValue }}
-                    </mat-option>
-                </mat-select>
-            </mat-form-field>
+            <div *ngIf="validationCheck(f2o1)">
+                <mat-form-field class="select">
+                    <mat-label>Second Roll</mat-label>
+                    <mat-select [(ngModel)]="f2o2">
+                        <mat-option *ngFor="let o of options" [value]="o.value">
+                            {{ o.viewValue }}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
         </div>
     </mat-card>
     
@@ -60,14 +64,16 @@
                     </mat-option>
                 </mat-select>
             </mat-form-field>
-            <mat-form-field class="select">
-                <mat-label>Second Roll</mat-label>
-                <mat-select [(ngModel)]="f3o2">
-                    <mat-option *ngFor="let o of options" [value]="o.value">
-                        {{ o.viewValue }}
-                    </mat-option>
-                </mat-select>
-            </mat-form-field>
+            <div *ngIf="validationCheck(f3o1)">
+                <mat-form-field class="select">
+                    <mat-label>Second Roll</mat-label>
+                    <mat-select [(ngModel)]="f3o2">
+                        <mat-option *ngFor="let o of options" [value]="o.value">
+                            {{ o.viewValue }}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
         </div>
     </mat-card>
     
@@ -84,14 +90,16 @@
                     </mat-option>
                 </mat-select>
             </mat-form-field>
-            <mat-form-field class="select">
-                <mat-label>Second Roll</mat-label>
-                <mat-select [(ngModel)]="f4o2">
-                    <mat-option *ngFor="let o of options" [value]="o.value">
-                        {{ o.viewValue }}
-                    </mat-option>
-                </mat-select>
-            </mat-form-field>
+            <div *ngIf="validationCheck(f4o1)">
+                <mat-form-field class="select">
+                    <mat-label>Second Roll</mat-label>
+                    <mat-select [(ngModel)]="f4o2">
+                        <mat-option *ngFor="let o of options" [value]="o.value">
+                            {{ o.viewValue }}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
         </div>
     </mat-card>
     
@@ -108,14 +116,16 @@
                     </mat-option>
                 </mat-select>
             </mat-form-field>
-            <mat-form-field class="select">
-                <mat-label>Second Roll</mat-label>
-                <mat-select [(ngModel)]="f5o2">
-                    <mat-option *ngFor="let o of options" [value]="o.value">
-                        {{ o.viewValue }}
-                    </mat-option>
-                </mat-select>
-            </mat-form-field>
+            <div *ngIf="validationCheck(f5o1)">
+                <mat-form-field class="select">
+                    <mat-label>Second Roll</mat-label>
+                    <mat-select [(ngModel)]="f5o2">
+                        <mat-option *ngFor="let o of options" [value]="o.value">
+                            {{ o.viewValue }}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
         </div>
     </mat-card>
     
@@ -132,14 +142,16 @@
                     </mat-option>
                 </mat-select>
             </mat-form-field>
-            <mat-form-field class="select">
-                <mat-label>Second Roll</mat-label>
-                <mat-select [(ngModel)]="f6o2">
-                    <mat-option *ngFor="let o of options" [value]="o.value">
-                        {{ o.viewValue }}
-                    </mat-option>
-                </mat-select>
-            </mat-form-field>
+            <div *ngIf="validationCheck(f6o1)">
+                <mat-form-field class="select">
+                    <mat-label>Second Roll</mat-label>
+                    <mat-select [(ngModel)]="f6o2">
+                        <mat-option *ngFor="let o of options" [value]="o.value">
+                            {{ o.viewValue }}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
         </div>
     </mat-card>
     
@@ -156,14 +168,16 @@
                     </mat-option>
                 </mat-select>
             </mat-form-field>
-            <mat-form-field class="select">
-                <mat-label>Second Roll</mat-label>
-                <mat-select [(ngModel)]="f7o2">
-                    <mat-option *ngFor="let o of options" [value]="o.value">
-                        {{ o.viewValue }}
-                    </mat-option>
-                </mat-select>
-            </mat-form-field>
+            <div *ngIf="validationCheck(f7o1)">
+                <mat-form-field class="select">
+                    <mat-label>Second Roll</mat-label>
+                    <mat-select [(ngModel)]="f7o2">
+                        <mat-option *ngFor="let o of options" [value]="o.value">
+                            {{ o.viewValue }}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
         </div>
     </mat-card>
     
@@ -180,14 +194,16 @@
                     </mat-option>
                 </mat-select>
             </mat-form-field>
-            <mat-form-field class="select">
-                <mat-label>Second Roll</mat-label>
-                <mat-select [(ngModel)]="f8o2">
-                    <mat-option *ngFor="let o of options" [value]="o.value">
-                        {{ o.viewValue }}
-                    </mat-option>
-                </mat-select>
-            </mat-form-field>
+            <div *ngIf="validationCheck(f8o1)">
+                <mat-form-field class="select">
+                    <mat-label>Second Roll</mat-label>
+                    <mat-select [(ngModel)]="f8o2">
+                        <mat-option *ngFor="let o of options" [value]="o.value">
+                            {{ o.viewValue }}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
         </div>
     </mat-card>
     
@@ -204,14 +220,16 @@
                     </mat-option>
                 </mat-select>
             </mat-form-field>
-            <mat-form-field class="select">
-                <mat-label>Second Roll</mat-label>
-                <mat-select [(ngModel)]="f9o2">
-                    <mat-option *ngFor="let o of options" [value]="o.value">
-                        {{ o.viewValue }}
-                    </mat-option>
-                </mat-select>
-            </mat-form-field>
+            <div *ngIf="validationCheck(f9o1)">
+                <mat-form-field class="select">
+                    <mat-label>Second Roll</mat-label>
+                    <mat-select [(ngModel)]="f9o2">
+                        <mat-option *ngFor="let o of options" [value]="o.value">
+                            {{ o.viewValue }}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
         </div>
     </mat-card>
     
@@ -246,10 +264,12 @@
             </mat-form-field>
         </div>
     </mat-card>
-</div>
-
-<div class="misc-container">
-    <p>Selected option1: {{ sum }}</p>
-    <p>Selected option2: {{ f1o2 }}</p>
-    <button mat-button (click)="calculateClick()">CALCULATE</button>
+    <div class="misc-container">
+        <h4>Total Score: {{ sum }}</h4>
+        <button mat-raised-button (click)="calculateClick()" color="accent" class="button">CALCULATE</button>
+        <button mat-raised-button (click)="clearClick()" color="accent" class="button">CLEAR</button>
+        <div *ngIf="isNaN(sum)">
+            <p>Frame scores must conform to scoring rules to yield a valid result.</p>
+        </div>
+    </div>
 </div>
